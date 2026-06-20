@@ -609,6 +609,7 @@ footer {
   }
   .card3 {
     gap: 50px;
+    flex-direction: column;
   }
   footer {
     padding: 20px 0;
