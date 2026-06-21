@@ -240,7 +240,7 @@ header button {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 100px 50px ;
+  padding: 100px 50px;
 }
 .container6 {
   height: 100%;
@@ -418,7 +418,7 @@ header button {
   width: 100%;
   min-height: 471px;
   height: 100%;
-  background-color: #f1f0fb;
+  background-color: #F9F9FC;
   margin: auto;
   margin-bottom: 132px;
   border-radius: 24px;
@@ -426,6 +426,20 @@ header button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.boro-golla {        
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  z-index: 0;
+}
+.soto-golla {
+  width: 10%;
+  position: absolute;
+  z-index: 0;
+  top: 313px;
+  left: 8.2%;
 }
 .container9 p {
   color: #333333;
@@ -433,6 +447,10 @@ header button {
   font-weight: 600;
   line-height: 72px;
   margin-bottom: 19px;
+  z-index: 1;
+}
+.container9 button {
+  z-index: 1;
 }
 .foot {
   padding: 20px;
@@ -624,19 +642,21 @@ footer {
     padding: 0;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .left3 {
     text-align: center;
   }
   .right3 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  .right3 p {
+  .center {
     text-align: center;
-    align-items: center;
-    padding: 0 30px;
   }
   .footer-bottom {
     padding: 10px 0;
