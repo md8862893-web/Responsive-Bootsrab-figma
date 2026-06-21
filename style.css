@@ -321,13 +321,13 @@ header button {
   background-color: #ffffff;
 }
 .overlay {
-  height: 269px;
+  min-height: 269px;
   width: 100%;
   background-color: #f9f9fc;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: 40px;
 }
 #blue {
   color: #5e3bee;
@@ -346,16 +346,16 @@ header button {
 .card3 {
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  transform: translateY(-75px);
+  gap: 20px;
 }
 .card4 {
-  width: 584px;
-  height: 369px;
+  max-width: 584px;
+  min-height: 369px;
   background-color: #ffffff;
   box-shadow: 37px 37px 80px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
@@ -376,18 +376,23 @@ header button {
 }
 .coment {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .avatar {
-  width: 64px;
-  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
   border-radius: 50%;
   background-color: #5e3bee;
   margin-right: 17px;
   background-image: url(—Pngtree—handsome\ boy\ for\ profile\ picture_8390953.png);
   background-size: cover;
 }
-.david {
+.david1 {
+  display: flex;
+  align-items: center;
+}
+.david2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -402,11 +407,7 @@ header button {
   font-weight: 400;
   color: #00000080;
 }
-.coment img {
-  margin-left: 243px;
-}
 .container8 {
-  height: 838px;
   width: 100%;
 }
 .container911 {
@@ -605,9 +606,14 @@ footer {
     align-items: center;
   }
   .container911 {
-    margin-top: 500px;
+    margin-top: 50px;
+  }
+  .container7 {
+    padding: 0 10px;
   }
   .card3 {
+    transform: none;
+    margin: auto;
     gap: 50px;
     flex-direction: column;
   }
